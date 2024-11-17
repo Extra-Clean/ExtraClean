@@ -272,8 +272,14 @@ header {
         margin-top: 60px;
     }
 
-    @media (min-width: 1024px) {
-        .slideshow-container {
-            height: 80vh; /* Memperbesar untuk desktop */
+     /* Custom CSS */
+     .carousel-item img {
+        object-fit: cover; /* Gambar penuh tanpa distorsi */
+        height: 500px; /* Sesuaikan tinggi carousel */
+    }
+
+    @media (min-width: 992px) { /* Desktop View */
+        .carousel-item img {
+            height: 600px; /* Tinggi yang berbeda untuk desktop */
         }
     }
